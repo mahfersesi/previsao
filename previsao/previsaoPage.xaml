@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="previsao.previsaoPage"
+             Shell.NavBarIsVisible="false">
+
+    <Grid>
+
+    <Grid.RowDefinitions>
+    <RowDefinition Height="100"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="*"/>
+    <RowDefinition Height="100"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+
+    <Label Text="Chuva:"
+            Grid.Row="1"
+            Grid.Column="1"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+    <Label Text="Humidade:"
+            Grid.Row="2"
+            Grid.Column="1"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+    <Label Text="Amanhecer:"
+            Grid.Row="3"
+            Grid.Column="1"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+    <Label Text="Anoitecer:"
+            Grid.Row="4"
+            Grid.Column="1"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+    <Label Text="Vento"
+            Grid.Row="1"
+            Grid.Column="2"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+    <Label Text="Força:"
+            Grid.Row="2"
+            Grid.Column="2"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+    <Label Text="Direção:"
+            Grid.Row="3"
+            Grid.Column="2"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+    <Label Text="Lua"
+            Grid.Row="4"
+            Grid.Column="2"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+    <Label Text="Fase:"
+            Grid.Row="5"
+            Grid.Column="2"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+
+
+
+    </Grid>
+    </ContentPage>

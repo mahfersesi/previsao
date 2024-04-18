@@ -13,16 +13,33 @@
     <RowDefinition Height="*"/>
     <RowDefinition Height="*"/>
     </Grid.RowDefinitions>
-    <Grid.ColumnDefinitions>
-    <ColumnDefinition Width="*"/>
-    <ColumnDefinition Width="*"/>
-    <ColumnDefinition Width="*"/>
-    </Grid.ColumnDefinitions>
 
-    <Image Source="previsaotempo.jpg"
+        <Image Source="previsaotempo.jpg"
             Aspect="AspectFill"
             Grid.RowSpan="5"
             Grid.ColumnSpan="3"/>
+
+        <Label Text="Previsao do tempo"
+           TextColor="#ffff00"
+           Grid.Row="2"
+           Margin="40"
+           HorizontalOptions="FillAndExpand"
+           FontSize="35"
+           FontFamily="CachetStdBold"
+           VerticalOptions="Center"/>
+
+        <Button x:Name="Promx"
+              Text="Ver previsão"
+              Clicked="Pr"
+              Grid.Row="4"
+              HeightRequest="50"
+              CornerRadius="25"
+              BackgroundColor="#1414b8"
+              TextColor="White"
+              FontSize="18"
+              FontFamily="CachetStdBold"
+              HorizontalOptions="FillAndExpand"
+              VerticalOptions="Center"/>
 
 
 
