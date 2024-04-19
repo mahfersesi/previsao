@@ -19,11 +19,41 @@
     <ColumnDefinition Width="*"/>
     <ColumnDefinition Width="*"/>
     <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="*"/>
     </Grid.ColumnDefinitions>
+
+        <Label x:Name="LabelGrau"
+            Grid.Row="1"
+            Grid.Column="0"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+        <Label x:Name="LabelCeu"
+            Grid.Row="2"
+            Grid.Column="0"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+        <Label x:Name="LabelCidade"
+            Grid.Row="3"
+            Grid.Column="0"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
 
     <Label Text="Chuva:"
             Grid.Row="1"
             Grid.Column="1"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+        <Label x:Name="LabelChuva"
+            Grid.Row="1"
+            Grid.Column="3"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
@@ -35,15 +65,43 @@
             FontSize="15"
             FontFamily="JAi___.TTF"/>
 
-    <Label Text="Amanhecer:"
+        <Label x:Name="LabelHumidade"
+            Grid.Row="2"
+            Grid.Column="3"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+        <Label Text="Sol"
             Grid.Row="3"
             Grid.Column="1"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
 
-    <Label Text="Anoitecer:"
+    <Label Text="Amanhecer:"
             Grid.Row="4"
+            Grid.Column="1"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+        <Label x:Name="LabelAmanhecer"
+            Grid.Row="4"
+            Grid.Column="3"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+        <Label x:Name="LabelAnoitecer"
+            Grid.Row="5"
+            Grid.Column="3"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+    <Label Text="Anoitecer:"
+            Grid.Row="5"
             Grid.Column="1"
             TextColor="Black"
             FontSize="15"
@@ -62,6 +120,16 @@
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
+            
+        <Label x:Name="LabelForte"
+            Grid.Row="5"
+            Grid.Column="5"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
+
+        
 
     <Label Text="Direção:"
             Grid.Row="3"
@@ -69,6 +137,14 @@
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
+
+        <Label x:Name="LabelDirecao"
+            Grid.Row="3"
+            Grid.Column="5"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
 
     <Label Text="Lua"
             Grid.Row="4"
@@ -83,6 +159,14 @@
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
+
+        <Label x:Name="LabelFase"
+            Grid.Row="5"
+            Grid.Column="5"
+            TextColor="Black"
+            FontSize="15"
+            FontFamily="JAi___.TTF"/>
+
 
 
 

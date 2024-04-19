@@ -14,6 +14,8 @@ public class  Results
             public string surinse{get;set;}
             public string sunset{get;set;}
             public string moon_phase{get;set;}
+            public string wind_direction{get;set;}
+            public int wind_speedy{get;set;}
 
 }
 
