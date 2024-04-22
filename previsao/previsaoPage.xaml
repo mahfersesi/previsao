@@ -16,37 +16,39 @@
     <RowDefinition Height="100"/>
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="10"/>
+    <ColumnDefinition Width="80"/>
+    <ColumnDefinition Width="90"/>
     <ColumnDefinition Width="*"/>
-    <ColumnDefinition Width="*"/>
-    <ColumnDefinition Width="*"/>
-    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="90"/>
     <ColumnDefinition Width="*"/>
     </Grid.ColumnDefinitions>
 
         <Label x:Name="LabelGrau"
             Grid.Row="1"
-            Grid.Column="0"
+            Grid.Column="1"
             TextColor="Black"
-            FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontSize="50"
+            FontFamily="JAi___.TTF"
+            Grid.RowSpan="3"/>
 
         <Label x:Name="LabelCeu"
-            Grid.Row="2"
-            Grid.Column="0"
+            Grid.Row="3"
+            Grid.Column="1"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
 
         <Label x:Name="LabelCidade"
-            Grid.Row="3"
-            Grid.Column="0"
+            Grid.Row="4"
+            Grid.Column="1"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
 
     <Label Text="Chuva:"
             Grid.Row="1"
-            Grid.Column="1"
+            Grid.Column="2"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
@@ -60,7 +62,7 @@
 
     <Label Text="Humidade:"
             Grid.Row="2"
-            Grid.Column="1"
+            Grid.Column="2"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
@@ -74,14 +76,14 @@
 
         <Label Text="Sol"
             Grid.Row="3"
-            Grid.Column="1"
+            Grid.Column="2"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
 
     <Label Text="Amanhecer:"
             Grid.Row="4"
-            Grid.Column="1"
+            Grid.Column="2"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
@@ -102,27 +104,27 @@
 
     <Label Text="Anoitecer:"
             Grid.Row="5"
-            Grid.Column="1"
+            Grid.Column="2"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
 
     <Label Text="Vento"
             Grid.Row="1"
-            Grid.Column="2"
+            Grid.Column="4"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
 
     <Label Text="Força:"
             Grid.Row="2"
-            Grid.Column="2"
+            Grid.Column="4"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
             
         <Label x:Name="LabelForte"
-            Grid.Row="5"
+            Grid.Row="2"
             Grid.Column="5"
             TextColor="Black"
             FontSize="15"
@@ -133,7 +135,7 @@
 
     <Label Text="Direção:"
             Grid.Row="3"
-            Grid.Column="2"
+            Grid.Column="4"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
@@ -148,14 +150,14 @@
 
     <Label Text="Lua"
             Grid.Row="4"
-            Grid.Column="2"
+            Grid.Column="4"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>
 
     <Label Text="Fase:"
             Grid.Row="5"
-            Grid.Column="2"
+            Grid.Column="4"
             TextColor="Black"
             FontSize="15"
             FontFamily="JAi___.TTF"/>

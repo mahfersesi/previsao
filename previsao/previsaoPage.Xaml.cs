@@ -8,8 +8,8 @@ public partial class previsaoPage : ContentPage
 	public previsaoPage()
 	{
 		InitializeComponent();
-		TestaLayout(),
-		PreencherTela(),
+		TestaLayout();
+		PreencherTela();
 	}
 
 	void TestaLayout()
@@ -25,15 +25,25 @@ public partial class previsaoPage : ContentPage
 		resultado.img_id="28";
 		resultado.humidity=90;
 		resultado.wind_speedy="4.99 km/h";
-		resultado.wind_direction=40;
-		resultado.surinse="06:11 am";
-		resultado.sunset="06:39 pm";
+		resultado.wind_direction="40";
+		resultado.surinse="06:11";
+		resultado.sunset="06:39";
 		resultado.moon_phase="cheia";
 	}
 
 	void PreencherTela()
 	{
-		
+		LabelGrau.Text=resultado.temp.ToString();
+		LabelCeu.Text=resultado.descripition.ToString();
+		LabelCidade.Text=resultado.city.ToString();
+		LabelChuva.Text=resultado.rain.ToString();
+		LabelHumidade.Text=resultado.humidity.ToString();
+		LabelAmanhecer.Text=resultado.surinse.ToString();
+		LabelAnoitecer.Text=resultado.sunset.ToString();
+		LabelForte.Text=resultado.wind_speedy.ToString();
+		LabelDirecao.Text=resultado.wind_direction.ToString();
+		LabelFase.Text=resultado.moon_phase.ToString();
+	
 	}
 	
 
