@@ -4,7 +4,7 @@ public class  Results
 {
              public int temp{get;set;}
             public string date{get;set;}
-            public string time{get;set;}
+            public int cloudness{get;set;}
             public string descripition{get;set;}
             public string city{get;set;}
             public string img_id{get;set;}

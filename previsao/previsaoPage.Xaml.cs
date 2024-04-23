@@ -19,7 +19,7 @@ public partial class previsaoPage : ContentPage
 		resultado.descripition="tempo nublado";
 		resultado.rain=10;
 		resultado.date="19/04/2024";
-		resultado.time="08:09";
+		resultado.cloudness=100;
 		resultado.currently="dia";
 		resultado.city="Apucarana";
 		resultado.img_id="28";
@@ -33,6 +33,23 @@ public partial class previsaoPage : ContentPage
 
 	void PreencherTela()
 	{
+		if (resultado.currently=="dia")
+		if (resultado.rain>=10)
+		ImgBackground.Source="diachuvoso.jpg";
+		else if (resultado.cloudness>=10)
+		ImgBackground.Source="ceunublado.jpg";
+		else 
+		ImgBackground.Source="diaensolarado.jpg";
+
+		 if (resultado.currently=="noite")
+		 if (resultado.rain>=10)
+		ImgBackground.Source="noitechuvosa.jpg";
+		else if (resultado.cloudness>=10)
+		ImgBackground.Source="noitenublado.jpg";
+		else 
+		ImgBackground.Source="ceuestrelado.jpg";
+	
+
 		LabelGrau.Text=resultado.temp.ToString();
 		LabelCeu.Text=resultado.descripition.ToString();
 		LabelCidade.Text=resultado.city.ToString();
@@ -45,6 +62,8 @@ public partial class previsaoPage : ContentPage
 		LabelFase.Text=resultado.moon_phase.ToString();
 	
 	}
+
+
 	
 
 }
