@@ -1,35 +1,40 @@
+using System.Linq.Expressions;
+using System.Text.Json;
+
 namespace previsao;
 
 public partial class previsaoPage : ContentPage
 {
-    Results resultado;
+	const string Url="https//api.hbrasil.com/woeid=455927&Key=previsao";
+    Results resultado; Results resposta;
+	async void AtualizaTempo()
+	{
+		try
+		{
+			var navegador=new HttpClient();
+			var response=await navegador.GetAsync(Url);
+			if(response.IsSuccessStatusCode)
+		{
+		var content=await response.Content.ReadAsStringAsync();
+		resposta = JsonSerializer.Deserialize<Results>(content);
+		}
+		PreencherTela();
+
+		}
+		catch(Exception e)
+		{
+			//erro
+		}
+	}
 	int count = 0;
 
 	public previsaoPage()
 	{
 		InitializeComponent();
-		TestaLayout();
 		PreencherTela();
 	}
 
-	void TestaLayout()
-	{
-		resultado= new Results();
-		resultado.temp=23;
-		resultado.descripition="tempo nublado";
-		resultado.rain=10;
-		resultado.date="19/04/2024";
-		resultado.cloudness=100;
-		resultado.currently="dia";
-		resultado.city="Apucarana";
-		resultado.img_id="28";
-		resultado.humidity=90;
-		resultado.wind_speedy="4.99 km/h";
-		resultado.wind_direction="40";
-		resultado.surinse="06:11";
-		resultado.sunset="06:39";
-		resultado.moon_phase="cheia";
-	}
+	
 
 	void PreencherTela()
 	{
