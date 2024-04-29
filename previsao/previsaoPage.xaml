@@ -66,8 +66,8 @@
            Opacity="5"
            Grid.Row="1"
             Grid.Column="2"
-            Grid.RowSpan="3"
-            Grid.ColumnSpan="3"/>
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="2"/>
 
         <Frame 
            CornerRadius="20"
@@ -76,7 +76,7 @@
            Grid.Row="3"
             Grid.Column="2"
             Grid.RowSpan="3"
-            Grid.ColumnSpan="3"/>
+            Grid.ColumnSpan="2"/>
 
         <Frame 
            CornerRadius="20"

@@ -6,7 +6,7 @@ namespace previsao;
 public partial class previsaoPage : ContentPage
 {
 	const string Url="https//api.hbrasil.com/woeid=455927&Key=previsao";
-    Results resultado; Results resposta;
+    Resposta resposta; 
 	async void AtualizaTempo()
 	{
 		try
@@ -16,7 +16,7 @@ public partial class previsaoPage : ContentPage
 			if(response.IsSuccessStatusCode)
 		{
 		var content=await response.Content.ReadAsStringAsync();
-		resposta = JsonSerializer.Deserialize<Results>(content);
+		resposta = JsonSerializer.Deserialize<Resposta>(content);
 		}
 		PreencherTela();
 
@@ -26,45 +26,45 @@ public partial class previsaoPage : ContentPage
 			//erro
 		}
 	}
-	int count = 0;
+	
 
 	public previsaoPage()
 	{
 		InitializeComponent();
-		PreencherTela();
+		AtualizaTempo();
 	}
 
 	
 
 	void PreencherTela()
 	{
-		if (resultado.currently=="dia")
-		if (resultado.rain>=10)
+		if (resposta.results.currently=="dia")
+		if (resposta.results.rain>=10)
 		ImgBackground.Source="diachuvoso.jpg";
-		else if (resultado.cloudness>=10)
+		else if (resposta.results.cloudness>=10)
 		ImgBackground.Source="ceunublado.jpg";
 		else 
 		ImgBackground.Source="diaensolarado.jpg";
 
-		 if (resultado.currently=="noite")
-		 if (resultado.rain>=10)
+		 if (resposta.results.currently=="noite")
+		 if (resposta.results.rain>=10)
 		ImgBackground.Source="noitechuvosa.jpg";
-		else if (resultado.cloudness>=10)
+		else if (resposta.results.cloudness>=10)
 		ImgBackground.Source="noitenublado.jpg";
 		else 
 		ImgBackground.Source="ceuestrelado.jpg";
 	
 
-		LabelGrau.Text=resultado.temp.ToString();
-		LabelCeu.Text=resultado.descripition.ToString();
-		LabelCidade.Text=resultado.city.ToString();
-		LabelChuva.Text=resultado.rain.ToString();
-		LabelHumidade.Text=resultado.humidity.ToString();
-		LabelAmanhecer.Text=resultado.surinse.ToString();
-		LabelAnoitecer.Text=resultado.sunset.ToString();
-		LabelForte.Text=resultado.wind_speedy.ToString();
-		LabelDirecao.Text=resultado.wind_direction.ToString();
-		LabelFase.Text=resultado.moon_phase.ToString();
+		LabelGrau.Text=resposta.results.temp.ToString();
+		LabelCeu.Text=resposta.results.descripition.ToString();
+		LabelCidade.Text=resposta.results.city.ToString();
+		LabelChuva.Text=resposta.results.rain.ToString();
+		LabelHumidade.Text=resposta.results.humidity.ToString();
+		LabelAmanhecer.Text=resposta.results.surinse.ToString();
+		LabelAnoitecer.Text=resposta.results.sunset.ToString();
+		LabelForte.Text=resposta.results.wind_speedy.ToString();
+		LabelDirecao.Text=resposta.results.wind_direction.ToString();
+		LabelFase.Text=resposta.results.moon_phase.ToString();
 	
 	}
 
