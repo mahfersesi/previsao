@@ -5,7 +5,7 @@ namespace previsao;
 
 public partial class previsaoPage : ContentPage
 {
-	const string Url="https//api.hbrasil.com/woeid=455927&Key=previsao";
+	const string Url="https://api.hgbrasil.com/weather?woeid=455927&key=13c13388";
     Resposta resposta; 
 	async void AtualizaTempo()
 	{
@@ -23,7 +23,7 @@ public partial class previsaoPage : ContentPage
 		}
 		catch(Exception e)
 		{
-			//erro
+			System.Diagnostics.Debug.WriteLine(e);
 		}
 	}
 	
@@ -56,11 +56,11 @@ public partial class previsaoPage : ContentPage
 	
 
 		LabelGrau.Text=resposta.results.temp.ToString();
-		LabelCeu.Text=resposta.results.descripition.ToString();
+		LabelCeu.Text=resposta.results.description.ToString();
 		LabelCidade.Text=resposta.results.city.ToString();
 		LabelChuva.Text=resposta.results.rain.ToString();
 		LabelHumidade.Text=resposta.results.humidity.ToString();
-		LabelAmanhecer.Text=resposta.results.surinse.ToString();
+		LabelAmanhecer.Text=resposta.results.sunrise.ToString();
 		LabelAnoitecer.Text=resposta.results.sunset.ToString();
 		LabelForte.Text=resposta.results.wind_speedy.ToString();
 		LabelDirecao.Text=resposta.results.wind_direction.ToString();

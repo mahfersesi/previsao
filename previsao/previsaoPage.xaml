@@ -17,10 +17,10 @@
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
     <ColumnDefinition Width="10"/>
-    <ColumnDefinition Width="80"/>
     <ColumnDefinition Width="90"/>
-    <ColumnDefinition Width="*"/>
+    <ColumnDefinition Width="200"/>
     <ColumnDefinition Width="90"/>
+    <ColumnDefinition Width="200"/>
     <ColumnDefinition Width="*"/>
     </Grid.ColumnDefinitions>
 
@@ -34,7 +34,7 @@
             Grid.Column="1"
             TextColor="Black"
             FontSize="50"
-            FontFamily="JAi___.TTF"
+            FontFamily="CachetStdBold"
             Grid.RowSpan="3"/>
 
         <Label x:Name="LabelCeu"
@@ -42,14 +42,14 @@
             Grid.Column="1"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
         <Label x:Name="LabelCidade"
             Grid.Row="4"
             Grid.Column="1"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
         <Frame 
            CornerRadius="20"
@@ -101,84 +101,88 @@
             Grid.Column="2"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
         <Label x:Name="LabelChuva"
             Grid.Row="1"
             Grid.Column="3"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
     <Label Text="Humidade:"
             Grid.Row="2"
             Grid.Column="2"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
         <Label x:Name="LabelHumidade"
             Grid.Row="2"
             Grid.Column="3"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
         <Label Text="Sol"
             Grid.Row="3"
             Grid.Column="2"
             TextColor="Black"
+            HorizontalOptions="Center"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            VerticalOptions="Center"
+            FontFamily="CachetStdBold"/>
 
     <Label Text="Amanhecer:"
             Grid.Row="4"
             Grid.Column="2"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
         <Label x:Name="LabelAmanhecer"
             Grid.Row="4"
             Grid.Column="3"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
         <Label x:Name="LabelAnoitecer"
             Grid.Row="5"
             Grid.Column="3"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
     <Label Text="Anoitecer:"
             Grid.Row="5"
             Grid.Column="2"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
     <Label Text="Vento"
             Grid.Row="1"
             Grid.Column="4"
+            VerticalOptions="Center"
             TextColor="Black"
+            HorizontalOptions="Center"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
     <Label Text="Força:"
             Grid.Row="2"
             Grid.Column="4"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
             
         <Label x:Name="LabelForte"
             Grid.Row="2"
             Grid.Column="5"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
 
         
@@ -188,36 +192,38 @@
             Grid.Column="4"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
         <Label x:Name="LabelDirecao"
             Grid.Row="3"
             Grid.Column="5"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
 
     <Label Text="Lua"
             Grid.Row="4"
+            VerticalOptions="Center"
             Grid.Column="4"
+            HorizontalOptions="Center"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
     <Label Text="Fase:"
             Grid.Row="5"
             Grid.Column="4"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
         <Label x:Name="LabelFase"
             Grid.Row="5"
             Grid.Column="5"
             TextColor="Black"
             FontSize="15"
-            FontFamily="JAi___.TTF"/>
+            FontFamily="CachetStdBold"/>
 
 
 
